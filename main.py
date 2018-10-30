@@ -42,6 +42,10 @@ def main(argv):
 
 
 def checkIfAddressIsValid(addr, config):
+    """
+    This function uses the extract city, state, zipcode and smartystreets
+    API to validate that combination
+    """
     # addr will be a dictionary
     print("Inside checkIfAddressIsValid")
     
@@ -94,7 +98,14 @@ def checkIfAddressIsValid(addr, config):
 
     return True
 
+
 def extractText(imagePath):
+    """
+    This function takes the image path provided as a command line argument
+    and extracts text from the image. Then, we use a regular expression to 
+    extract the city, state, and zipcode.
+    """
+    
     # Use tesseract to extract the text from the image
     print("Inside extract text using tesseract");
 
