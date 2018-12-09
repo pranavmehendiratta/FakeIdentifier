@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fake IDentifier Webpage</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+	</head>
+<!-- 	Assemble all the materials you have finished for your project in a webpage or wiki, including the motivation, the approach, your implementation, the results, and discussion of problems encountered. If you have comparison results or some interesting findings, put them on the webpage and discuss these as well. -->
+	<body>
+		<h1>Fake IDentifier or Fake ID Identifier.</h1>
+		<hr>
+		<div class = "post">
+			<div class="heading">Team</div>
+				<p>
+					Joseluis Garcia <br>
+					Pranav Mehendiratta <br>
+					Shubham Aggarwal <br>
+					Utkarsh Jain 
+				</p>
+			<hr>
+		</div>
+		<div class="post">
+			<div class="heading">Summary</div>
+
+			<p>Fake-IDentifier is an application with a sole objective of making the process of identifying fake from genuine IDs convenient. This app could potentially be used in-person at places such as bars, clubs, cinemas, dispensaries, chemists in addition to any age-controlled online platforms.</p>
+			<p>The application uses Text Recognition, Image Recognition, SIFT Age Determination, Image Normalization to detect inconsistencies within the same ID, and inconsistencies when compared with the copy of a genuine ID from the dataset</p>
+			<hr>
+		</div>
+		<div class = "post">
+			<div class = "heading">Motivation</div>
+			<p>Our  idea stems from a survey which showed that teenagers have started showing signs of alcohol addiction and college bars across the country face the problem of identifying underage minors trying to sneak into bars. The major source of their supply is liquor stores, bars, and even supermarkets. Even after strict enforcement of rules, cunning teenagers find a way to get around them. One such way is forging a ‘very-legible’ fake identity document, which a human eye might not be able to distinguish. 
+			</p>
+			<p>The power of a fake identity document isn’t limited to the purchase of alcohol. While teenagers use fake identity documents to get access to restricted commodities like alcohol, drugs, nicotine products and access to age-restricted places/website, others use fake identities to commit illegal activities like fraud, scams or even physical harm.
+			</p> 
+			<p>The main problem of under-age drinking that we are trying to address is viewed seriously by authorities on several college campuses. To prevent access of liquor to underage students is a matter of safety as well as law. Recent surveys have found this problem to be rampant and having a tool to sniff out fake IDs would be helpful for bars. Businesses have an incentive to not server to minors too as that can get you a felony charge. Our fake ID detector would be able to assist both bouncers at the doors and university officials.
+			</p>
+			<p>
+			Anyone with proficiency in design skills is capable of spoofing a genuine ID by forging fake details on it. Intricate designers can spoof an ID to resemble every pixel on a genuine ID. 
+			Such a problem could be significantly reduced, if not completely solved, by a platform that is trained to ‘sniff out’ fake identities by the use of simple concepts of Computer Vision - pattern recognition, image recognition, text recognition, SIFT, age determination, and other APIs.
+			</p>
+			<hr>
+		</div>
+		<div class = "post">
+			<div class = "heading">Approach</div>
+			<p>
+			There are multiple ways by which we can solve the problem at hand, but it boils down to being able to read the text and the photo separately from the ID. There is currently no software or library package on the internet that is specifically designed to combat counterfeit documents. We have come up with our own solution using text recognition, image recognition, SIFT, age determination, address verification, and image normalization through homography.
+			Here is an overview of the approach :-
+			<ul>
+				<li>Using image recognition in order to recognize the type of Id being provided. If the ID is unable to be recognized, we ask the user to manually input the type of ID they are providing. </li>
+				<li>Use image recognition to see any disparities by comparing against a dataset of genuine IDs. We look for inconsistencies like spacing, font, color and the aspect ratio of the photo on the ID.</li>
+				<li>Use text recognition to see any inconsistencies with the formatting of the identities. Look for inconsistencies like font-size, font-color and general regional formats (DD/MM/YYYY in case of European/Indian IDs or MM/DD/YYYY in case of American/Canadian ID). Can also add spelling and grammar checking, if need be.</li>
+				<li>Using image recognition to see whether the photo present on the ID matches the photo of the person presenting the ID. For this, we would ask the user of the app to take a close-up of the person in question.</li>
+				<li>Using text recognition to check whether the signature(if present on the ID) matches the signature provided by the person in question. </li>
+			</ul>
+			Finally, we aggregate all these features to feed data to a decision system based on that will decide whether the document in question is genuine, or not
+		</p>
+		<hr>
+		</div>
+		<div class = "post">
+			<div class = "heading">Implementation</div>
+			<!-- <p> Enter text here</p> -->
+			<hr>
+		</div>
+		<div class = "post">
+			<div class = "heading">Result</div>
+			<!-- <p> Enter text here</p> -->
+			<hr>
+		</div>
+		<div class = "post">
+			<div class = "heading">Problems</div>
+			<!-- <p> Enter text here</p> -->
+			<hr>
+		</div>
+	</body>
+</html>
