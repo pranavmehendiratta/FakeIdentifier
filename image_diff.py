@@ -1,11 +1,9 @@
 # python image_diff.py --first images/original_01.png --second images/modified_01.png
-# import the necessary packages
 from skimage.measure import compare_ssim
 import argparse
 import imutils
 import cv2
 
-# construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-f", "--first", required=True,
 	help="first input image")
@@ -35,9 +33,8 @@ cnts = imutils.grab_contours(cnts)
 
 # loop over the contours
 for c in cnts:
-	# compute the bounding box of the contour and then draw the
-	# bounding box on both input images to represent where the two
-	# images differ
+	# compute the bounding box of the contour a
+	#draw rectangle
 	(x, y, w, h) = cv2.boundingRect(c)
 	cv2.rectangle(imageA, (x, y), (x + w, y + h), (0, 0, 255), 2)
 	cv2.rectangle(imageB, (x, y), (x + w, y + h), (0, 0, 255), 2)
