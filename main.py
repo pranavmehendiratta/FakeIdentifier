@@ -3,6 +3,7 @@ from PIL import Image
 import pytesseract
 import argparse
 import cv2
+import tesserocr
 
 # SmartySteets imports
 from smartystreets_python_sdk import StaticCredentials, exceptions, ClientBuilder
