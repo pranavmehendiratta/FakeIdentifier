@@ -91,6 +91,16 @@ def checkIfAddressIsValid(addr, config):
         print("\nCity: " + city.city)
         print("State: " + city.state)
         print("Mailable City: {}".format(city.mailable_city))
+	data = {
+	    "City": city.city,
+	    "State": city.state,
+	    "MailableCity": city.mailable_city
+	}
+	
+	
+	#"{ City:" + city.city + "," + "State: " + city.state + "," + "Mailable_city: {}".format(city.mailable_city) + "}"
+	with open('output.json', 'w') as outfile:
+	    json.dump(data, outfile)
 
     # TODO: Need to convert abbreviation to full state
     #if str(match.groups(0)[0]).lower() != city.city.lower():
@@ -105,7 +115,6 @@ def checkIfAddressIsValid(addr, config):
     #if str(match.groups(0)[1]) != zipcode.zipcode:
     #    print("zip code is not correct")
     #    return False
-
         print("\nZIP Code: " + zipcode.zipcode)
         print("Latitude: {}".format(zipcode.latitude))
         print("Longitude: {}".format(zipcode.longitude))
@@ -169,7 +178,7 @@ def removeBackground(filePath):
     masked = (mask_stack * img) + ((1-mask_stack) * backgroundColor) # Blend
     masked = (masked * 255).astype('uint8')                     # Convert back to 8-bit
 
-    # cv2.imshow('img', masked)
+    cv2.imshow('img', masked)
     cv2.waitKey()
     cv2.imwrite(filePath[:len(filePath) - 4] + "_masked.jpg", masked)           # Save
 
