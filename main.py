@@ -3,6 +3,7 @@ from PIL import Image
 import pytesseract
 import argparse
 import cv2
+import numpy as np
 
 # SmartySteets imports
 from smartystreets_python_sdk import StaticCredentials, exceptions, ClientBuilder
@@ -54,8 +55,8 @@ def checkIfAddressIsValid(addr, config):
     smartystreets = config['smartystreets']
     credentials = StaticCredentials(smartystreets['auth_id'], smartystreets['auth_token'])
 
-    print(type(addr.groups()))
-    print(addr.groups(1)[1])
+    #print(type(addr.groups()))
+    #print(addr.groups(1)[1])
 
     regularExp = '(.*),(\s*.*)(\s\d\d\d\d\d)'
     match = re.search(regularExp, addr.groups(1)[1])
@@ -64,9 +65,9 @@ def checkIfAddressIsValid(addr, config):
         print ("cannot find city, state and zip code in checkIfAddressIsValid")
         return False
 
-    print("city: " + str(match.groups(0)[0]))
-    print("state: " + str(match.groups(0)[1]))
-    print("zip: " + str(match.groups(0)[2]))
+    #print("city: " + str(match.groups(0)[0]))
+    #print("state: " + str(match.groups(0)[1]))
+    #print("zip: " + str(match.groups(0)[2]))
 
     client = ClientBuilder(credentials).build_us_zipcode_api_client()
     lookup = Lookup()
@@ -91,16 +92,16 @@ def checkIfAddressIsValid(addr, config):
         print("\nCity: " + city.city)
         print("State: " + city.state)
         print("Mailable City: {}".format(city.mailable_city))
-	data = {
-	    "City": city.city,
-	    "State": city.state,
-	    "MailableCity": city.mailable_city
-	}
+	#data = {
+	#    "City": city.city,
+	#    "State": city.state,
+	#    "MailableCity": city.mailable_city
+	#}
 	
 	
 	#"{ City:" + city.city + "," + "State: " + city.state + "," + "Mailable_city: {}".format(city.mailable_city) + "}"
-	with open('output.json', 'w') as outfile:
-	    json.dump(data, outfile)
+	#with open('output.json', 'w') as outfile:
+	#    json.dump(data, outfile)
 
     # TODO: Need to convert abbreviation to full state
     #if str(match.groups(0)[0]).lower() != city.city.lower():
@@ -121,14 +122,14 @@ def checkIfAddressIsValid(addr, config):
 
     return True
 
+"""
+References: 
+"""
 def removeBackground(filePath):
     """
     This function takes the file path provided and removes the background
     by changing it to the color of white.
     """
-    import numpy as np
-
-    print("Path: " + filePath)
 
     # Constants
     cBlur = 21
@@ -173,12 +174,12 @@ def removeBackground(filePath):
 
     #Blend masked img into backgroundColor background
     mask_stack  = mask_stack.astype('float32') / 255.0          # Use float matrices,
-    img         = img.astype('float32') / 255.0                 #  for easy blending
+    img = img.astype('float32') / 255.0                 #  for easy blending
 
     masked = (mask_stack * img) + ((1-mask_stack) * backgroundColor) # Blend
     masked = (masked * 255).astype('uint8')                     # Convert back to 8-bit
 
-    cv2.imshow('img', masked)
+    #cv2.imshow('img', masked)
     cv2.waitKey()
     cv2.imwrite(filePath[:len(filePath) - 4] + "_masked.jpg", masked)           # Save
 
@@ -204,12 +205,12 @@ def extractText(imagePath):
     match = re.search(regularExp, text)
 
     print(text)
-    print("match: ")
+    #print("match: ")
 
     if match is not None:
-        print(type(match.groups()))
-        print(' '.join(match.groups()))
-        print("match.groups(1): " + str(match.groups(1)))
+        #print(type(match.groups()))
+        #print(' '.join(match.groups()))
+        #print("match.groups(1): " + str(match.groups(1)))
         return match
     else:
         return None
