@@ -103,19 +103,7 @@ def checkIfAddressIsValid(addr, config):
 	with open('output.json', 'w') as outfile:
 	    json.dump(data, outfile)
 
-    # TODO: Need to convert abbreviation to full state
-    #if str(match.groups(0)[0]).lower() != city.city.lower():
-    #    print("city is not correct")
-    #    return False
-    #if str(match.groups(0)[1]).lower() != city.state.lower():
-    #    print("state is not correct")
-    #    return False
-
     for zipcode in zipcodes:
-    # TODO: Check this one the city and state are matching
-    #if str(match.groups(0)[1]) != zipcode.zipcode:
-    #    print("zip code is not correct")
-    #    return False
         print("\nZIP Code: " + zipcode.zipcode)
         print("Latitude: {}".format(zipcode.latitude))
         print("Longitude: {}".format(zipcode.longitude))
@@ -123,7 +111,7 @@ def checkIfAddressIsValid(addr, config):
     return True
 
 """
-References: 
+Reference: https://stackoverflow.com/questions/29313667/how-do-i-remove-the-background-from-this-kind-of-image?fbclid=IwAR1aW3tT0qscne2gxyPEiJF1HYOU6WD2X68IRmKY2johBrtvUQePh9nB0xw 
 """
 def removeBackground(filePath):
     """
