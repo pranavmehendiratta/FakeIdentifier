@@ -1,7 +1,7 @@
 
-# import face_recognition
-# import cv2
-# import argparse
+import face_recognition
+import cv2
+import argparse
 
 # # This is a demo of running face recognition on live video from your webcam. It's a little more complicated than the
 # # other example, but it includes some basic performance tweaks to make things run a lot faster:
@@ -111,26 +111,31 @@ import face_recognition
 from PIL import Image, ImageDraw
 
 
+#Take arguments
+ap = argparse.ArgumentParser()
+ap.add_argument("-f", "--first", required=True,
+    help="first input image")
+ap.add_argument("-s", "--second", required=True,
+    help="second")
+
+args = vars(ap.parse_args())
+
 # Load a sample picture and learn how to recognize it.
-obama_image = face_recognition.load_image_file("emma.jpg")
+obama_image = face_recognition.load_image_file(args["first"])
 obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
 
-# Load a second sample picture and learn how to recognize it.
-biden_image = face_recognition.load_image_file("seth.jpg")
-biden_face_encoding = face_recognition.face_encodings(biden_image)[0]
+
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
-    obama_face_encoding,
-    biden_face_encoding
+    obama_face_encoding
 ]
 known_face_names = [
-    "Utkarsh",
-    "Seth Rogen"
+    "Utkarsh"
 ]
 
 # Load an image with an unknown face
-unknown_image = face_recognition.load_image_file("IDemma.jpg")
+unknown_image = face_recognition.load_image_file(args["second"])
 
 # Find all the faces and face encodings in the unknown image
 face_locations = face_recognition.face_locations(unknown_image)
