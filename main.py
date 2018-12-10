@@ -92,16 +92,16 @@ def checkIfAddressIsValid(addr, config):
         print("\nCity: " + city.city)
         print("State: " + city.state)
         print("Mailable City: {}".format(city.mailable_city))
-	#data = {
-	#    "City": city.city,
-	#    "State": city.state,
-	#    "MailableCity": city.mailable_city
-	#}
+	data = {
+	    "City": city.city,
+	    "State": city.state,
+	    "MailableCity": city.mailable_city
+	}
 	
 	
 	#"{ City:" + city.city + "," + "State: " + city.state + "," + "Mailable_city: {}".format(city.mailable_city) + "}"
-	#with open('output.json', 'w') as outfile:
-	#    json.dump(data, outfile)
+	with open('output.json', 'w') as outfile:
+	    json.dump(data, outfile)
 
     # TODO: Need to convert abbreviation to full state
     #if str(match.groups(0)[0]).lower() != city.city.lower():
