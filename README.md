@@ -47,11 +47,11 @@ Even though our application would have various false positives, we believe that 
 
 
 ## Results
-**TODO:(Insert screenshots)**  
 #### Text Recognition Results:  
 Text recognition results can be seen in the output.json file below. The input for validating the address is (city, state, zip\_code) and the smarty streets API returns whether that is a valid mailable address.
 #### Background Removal Results:  
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/emma.jpg "Emma Watson")  
+
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/emma.jpg "Emma Watson" =250x250)  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/emma_masked.jpg "Emma Watson with Masked Background")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman.jpg "Random Woman")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman_masked.jpg "Woman with Masked Background")  
@@ -65,7 +65,7 @@ Text recognition results can be seen in the output.json file below. The input fo
 #### Example final JSON: 
 ```json
 {	
-    "MailableCity": true, 
+   "MailableCity": true, 
     "City": "Madison", 
     "State": "Wisconsin"
     "FacialMatch": true,
