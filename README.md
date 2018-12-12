@@ -21,8 +21,7 @@ Access to alcohol isn't the only problem. Rising e-cigarette popularity in high 
 Anyone with proficiency in design skills is capable of spoofing a genuine ID by forging fake details on it. Intricate designers 
 can spoof an ID to resemble every pixel on a genuine ID. Such a problem could be significantly reduced, if not completely solved, by a platform that is trained to ‘sniff out’ fake identities by the use of simple concepts of Computer Vision.  
    
-![](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/web.png =250x250)
-   
+![](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/web.png)
    
 ## Approach
 There are multiple ways by which we can solve the problem at hand, but it boils down to being able to read the text
@@ -51,7 +50,7 @@ Even though our application would have various false positives, we believe that 
 Text recognition results can be seen in the output.json file below. The input for validating the address is (city, state, zip\_code) and the smarty streets API returns whether that is a valid mailable address.
 #### Background Removal Results:  
 Below we first have the input image and its corresponding background removed image. New background color is white.
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/emma.jpg "Emma Watson" =250x250)  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/emma.jpg "Emma Watson")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/emma_masked.jpg "Emma Watson with Masked Background")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman.jpg "Random Woman")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman_masked.jpg "Woman with Masked Background")  
@@ -61,8 +60,8 @@ Below we first have the input image and its corresponding background removed ima
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/mia_masked.jpg "Mia Kunis with Masked Background")  
 #### State Detection Results:  
 Here we input a valid wisconsin drivers license and output a new image with a red box around the valid state template matching.
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/driver1.jpg "Valid state ID" =250x250)  
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/driver1.jpg "Valid state ID" =250x250)  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/driver1.jpg "Valid state ID")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/driver1.jpg "State matchig result on a valid state ID")  
 #### Facial Recognition Results:  
 #### Structure Similary Index Test Results:  
 #### Example final JSON: 
