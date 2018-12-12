@@ -64,7 +64,7 @@ Even though our application would have various false positives, we believe that 
 ## Results
 **TODO:(Insert screenshots)**  
 #### Text Recognition Results:  
-Text recognition results can be seen in the output.json file. The input for validating the address is (city, state, zip\_code) and the smarty streets API returns whether that is a valid mailable address.
+Text recognition results can be seen in the output.json file below. The input for validating the address is (city, state, zip\_code) and the smarty streets API returns whether that is a valid mailable address.
 #### Background Removal Results:  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/emma.jpg "Emma Watson")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/emma_masked.jpg "Emma Watson with Masked Background")  
@@ -77,7 +77,7 @@ Text recognition results can be seen in the output.json file. The input for vali
 #### State Detection Results:  
 #### Facial Recognition Results:  
 #### Structure Similary Index Test Results:  
-#### Final JSON: 
+#### Example final JSON: 
 ```json
 {	
     "MailableCity": true, 
@@ -90,7 +90,7 @@ Text recognition results can be seen in the output.json file. The input for vali
 ## Problems
 **TODO: (Talk about quality of results here)**
 * The biggest problem we faced was to procure the dataset. We were not able to find good "fake" IDs or bad valid IDs. Therefore, we were not able to test the accuracy of our projet correctly. To resolve this problem we manually created a small set of fake IDs to test against.
-* 
+* Another problem is with text recgonition. Optical text recgonition works well when the resolution of the image is high otherwise similar looking characters are sometimes not correctly identified.
 
 ## Slides
 https://drive.google.com/file/d/11D_uPDwuzzh7fYszADgHioz0ASGKJ15G/view?fbclid=IwAR3V4FctFCtrQOHagRxswpPXldnQ_RUofi40uPDi29QEl-Cce6T2SNg6LQk
