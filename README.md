@@ -7,44 +7,29 @@ Shubham Aggarwal
 Utkarsh Jain  
 
 ## Summary
-Fake-IDentifier is an application with a sole objective of making the process of identifying fake from genuine IDs convenient.   
-This app could potentially be used in-person at places such as bars, clubs, cinemas, dispensaries, chemists in addition to  
-any age-controlled online platforms.  
+Fake-IDentifier is an application with the sole objective of making the process of identifying fake from genuine IDs convenient. This app could potentially be used in-person at places such as bars, clubs, cinemas, dispensaries, chemists in addition to verify age-controlled purchases online.  
   
-The application uses Text Recognition, Image Recognition, SIFT Age Determination, Image Normalization to detect inconsistencies 
-within the same ID, and inconsistencies when compared with the copy of a genuine ID from the dataset.  
+The application uses text and face Recognition, SIFT feature matching, image normalization to detect inconsistencies 
+with the provided ID. It has the capability to look for microscoping differences  and inconsistencies when compared with the copy of a genuine ID from the dataset.  
 
 ## Motivation
-Our idea stems from a survey which showed that teenagers have started showing signs of alcohol addiction and college bars 
-across the country face the problem of identifying underage minors trying to sneak into bars. The major source of 
-their supply is liquor stores, bars, and even supermarkets. Even after strict enforcement of rules, cunning teenagers find 
-a way to get around them. One such way is forging a ‘very-legible’ fake identity document, which a human eye might not be 
-able to distinguish. 
-  
-The power of a fake identity document isn’t limited to the purchase of alcohol. While teenagers use fake identity documents to 
-get access to restricted commodities like alcohol, drugs, nicotine products and access to age-restricted places/website, 
-others use fake identities to commit illegal activities like fraud, scams or even physical harm.
+Our idea stems from a survey which showed that college students are prone to alcohol related dangers and college bars 
+across the country face the problem of identifying underage minors trying to sneak into bars. It is very easy for a kid to acquire a fake ID by either crafting one on their own or buying them online. Even if the stores try to enforce these age restricted rules, people can spoof the system by using fake IDs that are difficult to verify.
 
-The main problem of under-age drinking that we are trying to address is viewed seriously by authorities on several college campuses. 
-To prevent access of liquor to underage students is a matter of safety as well as law. Recent surveys have found this problem to 
-be rampant and having a tool to sniff out fake IDs would be helpful for bars. Businesses have an incentive to not 
-serve to minors too as that can get you a felony charge. Our fake ID detector would be able to assist both bouncers 
-at the doors and university officials.  
+Access to alcohol isn't the only problem. Rising e-cigarette popularity in high schools recently is a source of concern for the FDA, as these vape sticks can be found virtually everwhere for anyone above the age of 18 (21 in some states). We wanted to curb this problem, to help authorities on college campuses. Recent surveys have found this problem to be rampant and having a tool to sniff out fake IDs would be helpful for bars. Businesses have an incentive to not serve to minors too as they can lose their liquor license. Our fake ID detector would be able to assist both bouncers at the doors and university officials.  
   
 Anyone with proficiency in design skills is capable of spoofing a genuine ID by forging fake details on it. Intricate designers 
-can spoof an ID to resemble every pixel on a genuine ID. Such a problem could be significantly reduced, if not completely solved,
-by a platform that is trained to ‘sniff out’ fake identities by the use of simple concepts of Computer Vision:  
-A) Pattern recognition  
-B) Image recognition  
-C) Text recognition  
-D) SIFT  
-E) Age determination  
-
+can spoof an ID to resemble every pixel on a genuine ID. Such a problem could be significantly reduced, if not completely solved, by a platform that is trained to ‘sniff out’ fake identities by the use of simple concepts of Computer Vision.  
+   
+![](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/web.png =250x250)
+   
+   
 ## Approach
 There are multiple ways by which we can solve the problem at hand, but it boils down to being able to read the text
 and the photo separately from the ID. There is currently no software or library package on the internet that is 
-specifically designed to combat counterfeit documents. We have come up with our own solution using text recognition, 
-image recognition, SIFT, age determination, address verification, and image normalization through homography. 
+specifically designed to combat counterfeit US drivers licenses. We have come up with our own solution using text recognition, 
+image recognition, SIFT, address verification, and template matching to create a multi-step verfication system to calculate the confidence about the authenticity of an ID.
+
 Here is an overview of the approach :-  
 * Using image recognition in order to recognize the type of Id being provided. If the ID is unable to be recognized, we ask the user to manually input the type of ID they are providing.
 * Use image recognition to see any disparities by comparing against a dataset of genuine IDs. We look for inconsistencies like spacing, font, color and the aspect ratio of the photo on the ID.
