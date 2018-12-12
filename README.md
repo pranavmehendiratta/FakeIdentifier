@@ -21,7 +21,7 @@ Access to alcohol isn't the only problem. Rising e-cigarette popularity in high 
 Anyone with proficiency in design skills is capable of spoofing a genuine ID by forging fake details on it. Intricate designers 
 can spoof an ID to resemble every pixel on a genuine ID. Such a problem could be significantly reduced, if not completely solved, by a platform that is trained to ‘sniff out’ fake identities by the use of simple concepts of Computer Vision.  
    
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/web.png =250x250)
+![](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/web.png =250x250)
    
    
 ## Approach
