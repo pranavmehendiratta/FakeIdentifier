@@ -62,7 +62,7 @@ Even though our application would have various false positives, we believe that 
 
 
 ## Results
-**TODO:(Insert screenshots)**
+**TODO:(Insert screenshots)**  
 Text Recognition Results:  
 Background Removal Results:  
 State Detection Results:  
