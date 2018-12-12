@@ -65,17 +65,18 @@ Even though our application would have various false positives, we believe that 
 **TODO:(Insert screenshots)**  
 #### Text Recognition Results:  
 #### Background Removal Results:  
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/emma.jpg "Emma Watson")
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/emma_masked.jpg "Emma Watson with Masked Background")
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman.jpg "Random Woman")
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman_masked.jpg "Woman with Masked Background")
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/emma.jpg "Emma Watson")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/emma_masked.jpg "Emma Watson with Masked Background")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman.jpg "Random Woman")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman_masked.jpg "Woman with Masked Background")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/rakesh.jpg "Random Man")
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/rakesh_masked.jpg "Man with Masked Background")
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/mia.jpg "Mia Kunis")
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/mia_masked.jpg "Mia Kunis with Masked Background")
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/rakesh_masked.jpg "Man with Masked Background")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/mia.jpg "Mia Kunis")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/mia_masked.jpg "Mia Kunis with Masked Background")  
 #### State Detection Results:  
 #### Facial Recognition Results:  
 #### Structure Similary Index Test Results:  
+#### Final JSON: 
 
 
 ## Problems
