@@ -62,8 +62,10 @@ Even though our application would have various false positives, we believe that 
 
 
 ## Results
+**TODO: PRANAV (Insert screenshots)
 
 ## Problems
+**TODO: PRANAV (Talk about quality of results here)
 
 ## Slides
-
+https://drive.google.com/file/d/11D_uPDwuzzh7fYszADgHioz0ASGKJ15G/view?fbclid=IwAR3V4FctFCtrQOHagRxswpPXldnQ_RUofi40uPDi29QEl-Cce6T2SNg6LQk
