@@ -51,20 +51,54 @@ Text recognition results can be seen in the output.json file below. The input fo
 #### Background Removal Results:  
 Below we first have the input image and its corresponding background removed image. New background color is white.
 
+Example 1
+
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/emma.jpg "Emma Watson")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/emma_masked.jpg "Emma Watson with Masked Background")  
+
+Example 2
+
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman.jpg "Random Woman")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman_masked.jpg "Woman with Masked Background")  
+
+Example 3
+
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/rakesh.jpg "Random Man")
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/rakesh_masked.jpg "Man with Masked Background")  
+
+Example 4
+
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/mia.jpg "Mia Kunis")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/mia_masked.jpg "Mia Kunis with Masked Background")  
+
+Example 5
+
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/image1.jpg "Person")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/image1.jpg "Person with Masked Background")  
+
 #### State Detection Results:  
 Here we input a valid wisconsin drivers license and output a new image with a red box around the valid state template matching.
+
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/driver1.jpg "Valid state ID")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/driver1.png "State matchig result on a valid state ID")  
 #### Facial Recognition Results:  
-Facial recognition will 
+
+Facial recognition will output a new image with box around the face on the ID and mention the name of the person it matched with otherwise it will say "unknown".
+
+Example 1
+
+Inputs
+
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/image1.jpg "Person with Masked Background")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/driver1.jpg "Valid state ID")  
+
+Output
+
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/faceMatch.png "Valid state ID")  
+
+
+
+
 #### Structure Similary Index Test Results:  
 #### Example final JSON: 
 ```json
@@ -73,7 +107,7 @@ Facial recognition will
     "City": "Madison", 
     "State": "Wisconsin"
     "FacialMatch": true,
-    "StateMatch": true
+    "StateMatch": Wisconsin
 }
 ```
 ## Problems
