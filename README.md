@@ -50,11 +50,11 @@ Here is an overview of the approach :-
 * Use image recognition to see any disparities by comparing against a dataset of genuine IDs. We look for inconsistencies like spacing, font, color and the aspect ratio of the photo on the ID.
 * Use text recognition to see any inconsistencies with the formatting of the identities. Look for inconsistencies like font-size, font-color and general regional formats (DD/MM/YYYY in case of European/Indian IDs or MM/DD/YYYY in case of American/Canadian ID). Can also add spelling and grammar checking, if need be.
 * Using image recognition to see whether the photo present on the ID matches the photo of the person presenting the ID. For this, we would ask the user of the app to take a close-up of the person in question.
-* Using text recognition to check whether the signature(if present on the ID) matches the signature provided by the person in question.  
-  
+* Using text recognition to check whether the signature(if present on the ID) matches the signature provided by the person in question.    
 Finally, we aggregate all these features to feed data to a decision system based on that will decide whether the document in question is genuine, or not
 
 ## Implementation
+**TODO: @Pranav (Use the slide-show audio transcript you used here) 
 
 ## Current State of the art
 Although our team was unable to find anything similar to what we are trying to do, the closest match was the hardware made by Fraud Fighter (https://www.fraudfighter.com/company). They use ultraviolet equipment to see if the ID in question has minute details found only on genuine documents on it. The equipment then decrypts the data and checks the legibility of these documents. They have other handheld devices to verify the barcodes, counterfeit currency detection, and other security equipment. While this machine has a high success rate, it comes with a high price, restricting its accessibility. Our application, however, would be free on mobile. Its success rate would essentially depend on our model parameters and depend on the various level of checks to identify any kind of discrepancy. It also assumes the picture taken during entry would be well lit enough for a face match.
@@ -62,10 +62,17 @@ Even though our application would have various false positives, we believe that 
 
 
 ## Results
-**TODO: PRANAV (Insert screenshots)
+**TODO:(Insert screenshots)**
+Text Recognition Results:  
+Background Removal Results:  
+State Detection Results:  
+Facial Recognition Results:  
+Structure Similary Index Test Results:  
+
 
 ## Problems
-**TODO: PRANAV (Talk about quality of results here)
+**TODO: (Talk about quality of results here)**
+* Procuring a dataset
 
 ## Slides
 https://drive.google.com/file/d/11D_uPDwuzzh7fYszADgHioz0ASGKJ15G/view?fbclid=IwAR3V4FctFCtrQOHagRxswpPXldnQ_RUofi40uPDi29QEl-Cce6T2SNg6LQk
