@@ -50,6 +50,7 @@ Even though our application would have various false positives, we believe that 
 Text recognition results can be seen in the output.json file below. The input for validating the address is (city, state, zip\_code) and the smarty streets API returns whether that is a valid mailable address.
 #### Background Removal Results:  
 Below we first have the input image and its corresponding background removed image. New background color is white.
+
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/emma.jpg "Emma Watson")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/emma_masked.jpg "Emma Watson with Masked Background")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman.jpg "Random Woman")  
@@ -63,6 +64,7 @@ Here we input a valid wisconsin drivers license and output a new image with a re
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/driver1.jpg "Valid state ID")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/driver1.png "State matchig result on a valid state ID")  
 #### Facial Recognition Results:  
+Facial recognition will 
 #### Structure Similary Index Test Results:  
 #### Example final JSON: 
 ```json
