@@ -54,7 +54,7 @@ Here is an overview of the approach :-
 Finally, we aggregate all these features to feed data to a decision system based on that will decide whether the document in question is genuine, or not
 
 ## Implementation
-**TODO: @Pranav (Use the slide-show audio transcript you used here) 
+**TODO: @Pranav (Use the slide-show audio transcript you used here)** 
 
 ## Current State of the art
 Although our team was unable to find anything similar to what we are trying to do, the closest match was the hardware made by Fraud Fighter (https://www.fraudfighter.com/company). They use ultraviolet equipment to see if the ID in question has minute details found only on genuine documents on it. The equipment then decrypts the data and checks the legibility of these documents. They have other handheld devices to verify the barcodes, counterfeit currency detection, and other security equipment. While this machine has a high success rate, it comes with a high price, restricting its accessibility. Our application, however, would be free on mobile. Its success rate would essentially depend on our model parameters and depend on the various level of checks to identify any kind of discrepancy. It also assumes the picture taken during entry would be well lit enough for a face match.
