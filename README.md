@@ -61,7 +61,7 @@ Below we first have the input image and its corresponding background removed ima
 #### State Detection Results:  
 Here we input a valid wisconsin drivers license and output a new image with a red box around the valid state template matching.
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/driver1.jpg "Valid state ID")  
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/driver1.jpg "State matchig result on a valid state ID")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/driver1.png "State matchig result on a valid state ID")  
 #### Facial Recognition Results:  
 #### Structure Similary Index Test Results:  
 #### Example final JSON: 
