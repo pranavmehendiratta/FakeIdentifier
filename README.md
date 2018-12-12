@@ -58,20 +58,15 @@ Example 1
 
 Example 2
 
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman.jpg "Random Woman")  
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman_masked.jpg "Woman with Masked Background")  
-
-Example 3
-
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/rakesh.jpg "Random Man")
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/rakesh_masked.jpg "Man with Masked Background")  
 
-Example 4
+Example 3
 
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/mia.jpg "Mia Kunis")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/mia_masked.jpg "Mia Kunis with Masked Background")  
 
-Example 5
+Example 4
 
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/image1.jpg "Person")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/image1.jpg "Person with Masked Background")  
@@ -96,8 +91,18 @@ Output
 
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/faceMatch.png "Valid state ID")  
 
+Example 2
 
+Inputs
 
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/mia_masked.jpg "Mia Kunis with Masked Background")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/driver2.jpg "Valid state ID")  
+
+Outputs
+
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/incorrectFaceMatch.png "Valid state ID")  
+
+NOTE: Here we can see that the facial recognition correctly identifies the person in the image
 
 #### Structure Similary Index Test Results:  
 #### Example final JSON: 
