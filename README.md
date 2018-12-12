@@ -39,6 +39,18 @@ Finally, we aggregate all these features to feed data to a decision system based
 
 ## Implementation
 **TODO: @Pranav (Use the slide-show audio transcript you used here)** 
+* Text Recognition
+We used optical character recognition for this step. We send the drivers license as the input and then output all the text on that drivers license. Then we use regular expressions to extract the city, state, and zip code. We send this as input to smarty streets API which tells us whether this address is valid or not. The motivation behind this step was that if a person is using a fake ID they will  most probably not have a correct address. Hence, we want to verify that part of the ID presented.
+
+* Background replacement
+
+For this step we use canny edge detection to identify the boundaries of the person in the photo. Once the edges are identified we replace the background with white color. Different values of thresholds can be used so that out algorithm works on images with different backgrounds. The motivation behind this step was ensure that the background does not have any other person/objects in it which yields incorrect facial recognition results.
+
+* Facial Recognition
+
+* State matching
+
+* SSM Index
 
 ## Current State of the art
 Although our team was unable to find anything similar to what we are trying to do, the closest match was the hardware made by Fraud Fighter (https://www.fraudfighter.com/company). They use ultraviolet equipment to see if the ID in question has minute details found only on genuine documents on it. The equipment then decrypts the data and checks the legibility of these documents. They have other handheld devices to verify the barcodes, counterfeit currency detection, and other security equipment. While this machine has a high success rate, it comes with a high price, restricting its accessibility. Our application, however, would be free on mobile. Its success rate would essentially depend on our model parameters and depend on the various level of checks to identify any kind of discrepancy. It also assumes the picture taken during entry would be well lit enough for a face match.
@@ -102,7 +114,7 @@ Outputs
 
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/incorrectFaceMatch.png "Valid state ID")  
 
-NOTE: Here we can see that the facial recognition correctly identifies the person in the image
+NOTE: Here we can see that the facial recognition correctly identifies that the person in the input image is not on the drivers license.
 
 #### Structure Similary Index Test Results:  
 #### Example final JSON: 
@@ -119,6 +131,6 @@ NOTE: Here we can see that the facial recognition correctly identifies the perso
 **TODO: (Talk about quality of results here)**
 * The biggest problem we faced was to procure the dataset. We were not able to find good "fake" IDs or bad valid IDs. Therefore, we were not able to test the accuracy of our projet correctly. To resolve this problem we manually created a small set of fake IDs to test against.
 * Another problem is with text recgonition. Optical text recgonition works well when the resolution of the image is high otherwise similar looking characters are sometimes not correctly identified.
-
+* For background replacement we encountered several problems. The primary issue was to make our background algorithm work efficiently with all kinds of images with different contrast in the background. Ultimately, we decided that we need to run this program at night, therefore, adjusted the threshold such that we can get a fair result from this step for facial recognition.
 ## Slides
 https://drive.google.com/file/d/11D_uPDwuzzh7fYszADgHioz0ASGKJ15G/view?fbclid=IwAR3V4FctFCtrQOHagRxswpPXldnQ_RUofi40uPDi29QEl-Cce6T2SNg6LQk
