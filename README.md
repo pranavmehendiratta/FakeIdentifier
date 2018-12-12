@@ -50,16 +50,19 @@ Even though our application would have various false positives, we believe that 
 #### Text Recognition Results:  
 Text recognition results can be seen in the output.json file below. The input for validating the address is (city, state, zip\_code) and the smarty streets API returns whether that is a valid mailable address.
 #### Background Removal Results:  
-
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/emma.jpg "Emma Watson" =250x250)  
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/emma_masked.jpg "Emma Watson with Masked Background")  
+Below we first have the input image and its corresponding background removed image. New background color is white.
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/emma.jpg "Emma Watson" =250x250)  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/emma_masked.jpg "Emma Watson with Masked Background")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman.jpg "Random Woman")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/woman_masked.jpg "Woman with Masked Background")  
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/rakesh.jpg "Random Man")
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/rakesh_masked.jpg "Man with Masked Background")  
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/mia.jpg "Mia Kunis")  
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/Images/mia_masked.jpg "Mia Kunis with Masked Background")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/rakesh.jpg "Random Man")
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/rakesh_masked.jpg "Man with Masked Background")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/mia.jpg "Mia Kunis")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/mia_masked.jpg "Mia Kunis with Masked Background")  
 #### State Detection Results:  
+Here we input a valid wisconsin drivers license and output a new image with a red box around the valid state template matching.
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/driver1.jpg "Valid state ID" =250x250)  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/driver1.jpg "Valid state ID" =250x250)  
 #### Facial Recognition Results:  
 #### Structure Similary Index Test Results:  
 #### Example final JSON: 
