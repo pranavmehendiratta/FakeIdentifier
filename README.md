@@ -39,7 +39,9 @@ Finally, we aggregate all these features to feed data to a decision system based
 
 ## Implementation
 **TODO: @Pranav (Use the slide-show audio transcript you used here)** 
+
 * Text Recognition
+
 We used optical character recognition for this step. We send the drivers license as the input and then output all the text on that drivers license. Then we use regular expressions to extract the city, state, and zip code. We send this as input to smarty streets API which tells us whether this address is valid or not. The motivation behind this step was that if a person is using a fake ID they will  most probably not have a correct address. Hence, we want to verify that part of the ID presented.
 
 * Background replacement
