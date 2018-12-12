@@ -20,17 +20,16 @@ Access to alcohol isn't the only problem. Rising e-cigarette popularity in high 
   
 Anyone with proficiency in design skills is capable of spoofing a genuine ID by forging fake details on it. Intricate designers 
 can spoof an ID to resemble every pixel on a genuine ID. Such a problem could be significantly reduced, if not completely solved, by a platform that is trained to ‘sniff out’ fake identities by the use of simple concepts of Computer Vision.  
-  
+   
+  ![alt text] (https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/web.png)
+   
+   
 ## Approach
-A) Pattern recognition  
-B) Image recognition  
-C) Text recognition  
-D) SIFT  
-E) Age determination
 There are multiple ways by which we can solve the problem at hand, but it boils down to being able to read the text
 and the photo separately from the ID. There is currently no software or library package on the internet that is 
-specifically designed to combat counterfeit documents. We have come up with our own solution using text recognition, 
-image recognition, SIFT, age determination, address verification, and image normalization through homography. 
+specifically designed to combat counterfeit US drivers licenses. We have come up with our own solution using text recognition, 
+image recognition, SIFT, address verification, and template matching to create a multi-step verfication system to calculate the confidence about the authenticity of an ID.
+
 Here is an overview of the approach :-  
 * Using image recognition in order to recognize the type of Id being provided. If the ID is unable to be recognized, we ask the user to manually input the type of ID they are providing.
 * Use image recognition to see any disparities by comparing against a dataset of genuine IDs. We look for inconsistencies like spacing, font, color and the aspect ratio of the photo on the ID.
