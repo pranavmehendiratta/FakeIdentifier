@@ -129,6 +129,27 @@ Outputs
 NOTE: Here we can see that the facial recognition correctly identifies that the person in the input image is not on the drivers license.
 
 ## Structure Similary Index Test Results:  
+
+Example 1
+
+Input 
+
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/driver3e.png "Valid state ID")  
+
+Output
+
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/SSM2.png "Valid state ID")  
+
+Example 2
+
+Input 
+
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/SSM4.png "Valid state ID")  
+
+Output
+
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/SSM3.png "Valid state ID")  
+
 ## Example final JSON: 
 ```json
 {	
@@ -136,7 +157,7 @@ NOTE: Here we can see that the facial recognition correctly identifies that the 
     "City": "Madison", 
     "State": "Wisconsin"
     "FacialMatch": true,
-    "StateMatch": Wisconsin
+    "StateMatch": "Wisconsin"
 }
 ```
 ## Problems
