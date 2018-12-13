@@ -130,23 +130,19 @@ NOTE: Here we can see that the facial recognition correctly identifies that the 
 
 ## Structure Similary Index Test Results:  
 
-Example 1
-
-Input 
+The first image has been modified to have a black box on the top right. This represents a fake ID presented at the bar by a naive freshman. 
 
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/driver3e.jpg "Valid state ID")  
 
-Output
+The difference image is represented in [0,1] range. 
 
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/SSM2.png "Valid state ID")  
 
-Example 2
-
-Input 
+Our system detects that the image is different in the top roght than the dataset, and draws a rectangle around it. This represents that the ID is fake. 
 
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/SSM4.png "Valid state ID")  
 
-Output
+SSM image for the genuine ID.
 
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/SSM3.png "Valid state ID")  
 
