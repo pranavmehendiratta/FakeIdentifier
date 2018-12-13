@@ -49,13 +49,16 @@ We used optical character recognition for this step. We send the drivers license
 For this step we use canny edge detection to identify the boundaries of the person in the photo. Once the edges are identified we replace the background with white color. Different values of thresholds can be used so that out algorithm works on images with different backgrounds. The motivation behind this step was ensure that the background does not have any other person/objects in it which yields incorrect facial recognition results.
 
 * Facial Recognition
+
 Using pre trained models based on dlib C++ library, our system can detect faces both from live feed from the smartphone camera or by taking a picture of the person presenting the ID. A lot of times people borrow IDs from their friends or siblings that look very much like them. By fine tuning the tolerance parameter, we can detect accurately between people who look very similar. Beards, glasses or even face fat does not fool the implementation.
 
 * State matching
+
 To match the ID with its corresponding state,  we implemented template matching, which is a technique for finding areas of an image that are similar to a provided set of templates. We first scrapped each state’s logos found on their respective driver’s license image from the internet (mainly from https://www.aceable.com/blog/all-51-driver-license-designs-ranked-worst-to-best/ ). By collecting the interest points like pixel intensity, color and focus of the provided logos of all 48 drriver license headers, we compare the one present in the ID. After segmenting the image, the segments are matched with our database using cv2.matchTemplate( ) function, where each pixel denotes how much does the neighborhood of that pixel match with template. 
 Then we applied cv2.minMaxLoc() on the result to obtained the max_val for each template and stored it dictionary with its corresponding state name. Finally, we take the max value from every template to obtain the best matching template (the state). 
 
 * SSM Index
+
 Even if the ID passed our three tests, the ID is processed by a microscopic algorithm to detect fine prints and microscopic patterns found only in genuine IDs. These patterns are hard to reproduce with a scanner, but a human eye can miss these tiny details under dim bar lighting conditions. Wang *italics* et *italics* al proposed the Structure Similarity Index in 2004.
 
 We use OpenCV’s support to calculate the SSM index. SSm index is the average value of three attributes for each pixel - luminance, contrast and structure. By taking the difference of SSM indexes (converted to 8-bit grayscale) for two images, we are able to distinguish areas where the ID differs from the known dataset. We then draw a rectangle around this detected contour to convey any differences detected by our system.
