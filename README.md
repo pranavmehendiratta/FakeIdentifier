@@ -95,12 +95,12 @@ Example 4
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/image1.jpg "Person")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/image1.jpg "Person with Masked Background")  
 
-#### State Detection Results:  
+## State Detection Results:  
 Here we input a valid wisconsin drivers license and output a new image with a red box around the valid state template matching.
 
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/input/driver1.jpg "Valid state ID")  
 ![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/driver1.png "State matchig result on a valid state ID")  
-#### Facial Recognition Results:  
+## Facial Recognition Results:  
 
 Facial recognition will output a new image with box around the face on the ID and mention the name of the person it matched with otherwise it will say "unknown".
 
@@ -128,8 +128,8 @@ Outputs
 
 NOTE: Here we can see that the facial recognition correctly identifies that the person in the input image is not on the drivers license.
 
-#### Structure Similary Index Test Results:  
-#### Example final JSON: 
+## Structure Similary Index Test Results:  
+## Example final JSON: 
 ```json
 {	
    "MailableCity": true, 
