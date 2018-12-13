@@ -169,3 +169,7 @@ SSM image for the genuine ID.
 
 ## Slides
 https://drive.google.com/file/d/11D_uPDwuzzh7fYszADgHioz0ASGKJ15G/view?fbclid=IwAR3V4FctFCtrQOHagRxswpPXldnQ_RUofi40uPDi29QEl-Cce6T2SNg6LQk
+
+##References
+Z.Wang, Conrad Bovik et al. Image Quality Assessment: From Error Visibility to Structural Similarity
+https://pythonspot.com/object-detection-with-templates/
