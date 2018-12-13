@@ -134,7 +134,7 @@ Example 1
 
 Input 
 
-![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/driver3e.png "Valid state ID")  
+![alt text](https://github.com/pranavmehendiratta/FakeIdentifier/blob/master/output/driver3e.jpg "Valid state ID")  
 
 Output
 
