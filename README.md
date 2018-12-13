@@ -38,7 +38,6 @@ Here is an overview of the approach :-
 Finally, we aggregate all these features to feed data to a decision system based on that will decide whether the document in question is genuine, or not
 
 ## Implementation
-**TODO: @Pranav (Use the slide-show audio transcript you used here)** 
 
 * Text Recognition
 
@@ -143,9 +142,15 @@ NOTE: Here we can see that the facial recognition correctly identifies that the 
 }
 ```
 ## Problems
-**TODO: (Talk about quality of results here)**
 * The biggest problem we faced was to procure the dataset. We were not able to find good "fake" IDs or bad valid IDs. Therefore, we were not able to test the accuracy of our projet correctly. To resolve this problem we manually created a small set of fake IDs to test against.
+
 * Another problem is with text recgonition. Optical text recgonition works well when the resolution of the image is high otherwise similar looking characters are sometimes not correctly identified.
+
 * For background replacement we encountered several problems. The primary issue was to make our background algorithm work efficiently with all kinds of images with different contrast in the background. Ultimately, we decided that we need to run this program at night, therefore, adjusted the threshold such that we can get a fair result from this step for facial recognition.
+
+* For most states the program detects the correct name and position but fails the rest of the times. In order to make it more accurate we need a bigger data set of templates but unfortunately with the short time span it did not give us enough time to improve it.
+
+* Finding the right method to detect differences was important. Also, a lot of IDs have color gradients that are intensity neutral at some spots in the ID. Because of this, the above approach is not able to detect differences through SSM for some states like Michigan or Pennsylvania. 
+
 ## Slides
 https://drive.google.com/file/d/11D_uPDwuzzh7fYszADgHioz0ASGKJ15G/view?fbclid=IwAR3V4FctFCtrQOHagRxswpPXldnQ_RUofi40uPDi29QEl-Cce6T2SNg6LQk
