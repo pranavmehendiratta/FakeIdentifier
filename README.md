@@ -59,7 +59,7 @@ Then we applied cv2.minMaxLoc() on the result to obtained the max_val for each t
 
 * SSM Index
 
-Even if the ID passed our three tests, the ID is processed by a microscopic algorithm to detect fine prints and microscopic patterns found only in genuine IDs. These patterns are hard to reproduce with a scanner, but a human eye can miss these tiny details under dim bar lighting conditions. Wang *italics* et *italics* al proposed the Structure Similarity Index in 2004.
+Even if the ID passed our three tests, the ID is processed by a microscopic algorithm to detect fine prints and microscopic patterns found only in genuine IDs. These patterns are hard to reproduce with a scanner, but a human eye can miss these tiny details under dim bar lighting conditions. Wang *italics et al * proposed the Structure Similarity Index in 2004.
 
 We use OpenCV’s support to calculate the SSM index. SSm index is the average value of three attributes for each pixel - luminance, contrast and structure. By taking the difference of SSM indexes (converted to 8-bit grayscale) for two images, we are able to distinguish areas where the ID differs from the known dataset. We then draw a rectangle around this detected contour to convey any differences detected by our system.
 
