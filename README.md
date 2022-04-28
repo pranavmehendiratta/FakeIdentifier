@@ -1,10 +1,3 @@
-# FakeIdentifier
-
-## Team
-Joseluis Garcia  
-Pranav Mehendiratta  
-Shubham Aggarwal  
-Utkarsh Jain  
 
 ## Summary
 Fake-IDentifier is an application with the sole objective of making the process of identifying fake from genuine IDs convenient. This app could potentially be used in-person at places such as bars, clubs, cinemas, dispensaries, chemists in addition to verifying online age-controlled purchases.  
